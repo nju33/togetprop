@@ -1,10 +1,12 @@
-interface defaultValues {
-  [key: string]: any;
+declare function togetprop(baseObj: string | null, defaultValues?: togetprop.DefaultValues): togetprop.CreatePropPathTag;
+
+declare namespace togetprop {
+  export interface DefaultValues {
+    [key: string]: any;
+  }
+
+  export type GetProp = (data: object) => any;
+  export type CreatePropPathTag = (strings: TemplateStringsArray) => GetProp
 }
-
-type getProp = (data: object) => any;
-type createPropPathTag = (strings: TemplateStringsArray) => getProp
-
-declare function togetprop(baseObj: string | null, defaultValues?: defaultValues): createPropPathTag;
 
 export = togetprop;

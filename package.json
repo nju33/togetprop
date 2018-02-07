@@ -7,6 +7,13 @@
   "scripts": {
     "test": "jest"
   },
+  "repository": "nju33/togetprop",
+  "files": [
+    "index.d.ts",
+    "index.js",
+    "README.md",
+    "yarn.lock"
+  ],
   "dependencies": {
     "lodash": "^4.17.5"
   },
