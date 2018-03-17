@@ -1,6 +1,6 @@
 {
   "name": "togetprop",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/togetprop.js",
   "umd:main": "dist/togetprop.umd.js",
   "module": "dist/togetprop.m.js",
