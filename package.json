@@ -17,11 +17,11 @@
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": "nju33/togetprop",
+  "keywords": [
+    "object"
+  ],
   "files": [
-    "index.d.ts",
-    "index.js",
-    "README.md",
-    "yarn.lock"
+    "dist"
   ],
   "dependencies": {
     "lodash": "^4.17.5"
