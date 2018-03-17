@@ -1,8 +1,11 @@
 {
   "name": "togetprop",
   "version": "0.0.2",
-  "main": "index.js",
   "types": "index.d.ts",
+  "main": "dist/togetprop.js",
+  "umd:main": "dist/togetprop.umd.js",
+  "module": "dist/togetprop.m.js",
+  "source": "src/togetprop.ts",
   "license": "MIT",
   "scripts": {
     "test": "jest"
@@ -15,9 +18,15 @@
     "yarn.lock"
   ],
   "dependencies": {
+    "@types/lodash": "^4.14.105",
     "lodash": "^4.17.5"
   },
   "devDependencies": {
-    "jest": "^22.1.4"
+    "@geekcojp/tslint-config": "^0.1.2",
+    "jest": "^22.1.4",
+    "microbundle": "^0.4.4",
+    "prettier": "^1.11.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
   }
 }
