@@ -1,5 +1,7 @@
 # togetprop
 
+[![CircleCI](https://circleci.com/gh/nju33/togetprop.svg?style=svg)](https://circleci.com/gh/nju33/togetprop)
+
 ## Install
 
 ```bash
