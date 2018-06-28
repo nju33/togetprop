@@ -1,18 +1,18 @@
-const {get} = require('lodash');
+const dotProp = require('dot-prop');
 
 module.exports = (basePath, defaultValues = {}) => ([relativePath]) => {
   return obj => {
     let baseObj = obj;
     if (basePath) {
-      baseObj = get(obj, basePath);
+      baseObj = dotProp.get(obj, basePath);
     }
 
     if (typeof baseObj !== 'object') {
       throw new Error(`Please you have to set object to obj.basePath`);
     }
 
-    const defaultValue = get(defaultValues, relativePath);
+    const defaultValue = dotProp.get(defaultValues, relativePath);
 
-    return get(baseObj, relativePath, defaultValue);
-  }
-}
+    return dotProp.get(baseObj, relativePath, defaultValue);
+  };
+};

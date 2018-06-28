@@ -1,12 +1,14 @@
-declare function togetprop(baseObj: string | null, defaultValues?: togetprop.DefaultValues): togetprop.CreatePropPathTag;
 
-declare namespace togetprop {
-  export interface DefaultValues {
+declare module 'togetprop' {
+  interface DefaultValues {
     [key: string]: any;
   }
 
-  export type GetProp = (data: object) => any;
-  export type CreatePropPathTag = (strings: TemplateStringsArray) => GetProp
+  type GetProp = (data: object) => any;
+  type CreatePropPathTag = (strings: TemplateStringsArray) => GetProp
+
+  function togetprop(baseObj: string | null, defaultValues?: DefaultValues): CreatePropPathTag;
+
+  export = togetprop;
 }
 
-export = togetprop;

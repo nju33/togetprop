@@ -21,15 +21,16 @@
     "object"
   ],
   "files": [
-    "dist"
+    "dist",
+    "togetprop.d.ts"
   ],
   "dependencies": {
-    "lodash": "^4.17.5"
+    "dot-prop": "^4.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "jest": "^22.4.2",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.2.0",
     "microbundle": "^0.4.4"
   }
 }
